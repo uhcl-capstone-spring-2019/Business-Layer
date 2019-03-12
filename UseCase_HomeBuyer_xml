@@ -1,0 +1,61 @@
+//** UseCase Home Buyer xml **//
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UseCase_HomeBuyer">
+  <useCaseModelRootMoniker Id="bdf12d4e-ee5c-4950-9245-3ac5cb86001d" />
+  <nestedChildShapes>
+    <actorShape Id="8b8f8150-0c33-4c7d-93c1-060363bee67e" absoluteBounds="2.5, 2.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="2f6d69b7-5109-48af-b4f6-d663b0d43d0e" LastKnownName="Home Buyer" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="da05821c-acc8-445d-aca8-d5bfd1e2b836" absoluteBounds="4.875, 1.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3cc10a39-bc96-445c-8a41-72069f48c5e3" LastKnownName="See through hololens." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3 : 2.73214285714286); (5.04574769606574 : 1.56314417367672)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="02cb6305-b304-44a5-b2ab-12571347cbaf" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="8b8f8150-0c33-4c7d-93c1-060363bee67e" />
+        <useCaseShapeMoniker Id="da05821c-acc8-445d-aca8-d5bfd1e2b836" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="49bb4363-ccf5-4f11-a3fd-d79f6d6f7cab" absoluteBounds="4.875, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="1373f32c-9a7d-468b-b1ad-7bc9bcb0551b" LastKnownName="Select flood watch." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3 : 2.81547619047619); (4.92356974058804 : 2.35748339509809)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="e756d375-8966-41d7-b936-8da72d74e2d2" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="8b8f8150-0c33-4c7d-93c1-060363bee67e" />
+        <useCaseShapeMoniker Id="49bb4363-ccf5-4f11-a3fd-d79f6d6f7cab" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="313762d3-01f5-46ad-9669-7a097adc3bf2" absoluteBounds="4.875, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="495057dd-dbe8-4165-994a-f3b7c8f02e61" LastKnownName="Select location." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3 : 2.91071428571429); (4.89423802617959 : 3.18131971802566)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="f2a54cbd-fe2b-4390-bdda-068585fb53f3" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="8b8f8150-0c33-4c7d-93c1-060363bee67e" />
+        <useCaseShapeMoniker Id="313762d3-01f5-46ad-9669-7a097adc3bf2" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ee2992b9-15d4-46df-8d0d-b3deab2fabc0" absoluteBounds="4.875, 4.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e7b4479f-55b9-46cd-8705-58ba1bdb7629" LastKnownName="Adjust rainfall level." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3 : 3.01785714285714); (5.04574769606574 : 4.18685582632328)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="bdb0329f-839a-4b15-acf3-ceffff708897" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="8b8f8150-0c33-4c7d-93c1-060363bee67e" />
+        <useCaseShapeMoniker Id="ee2992b9-15d4-46df-8d0d-b3deab2fabc0" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
