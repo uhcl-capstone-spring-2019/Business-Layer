@@ -1,0 +1,97 @@
+//** Use case National Weather service officer xml **//
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UseCaseDiagram_NationalWeatherServiceOfficer">
+  <useCaseModelRootMoniker Id="11e4bc70-375a-4517-a8d2-19ddaaeeeda0" />
+  <nestedChildShapes>
+    <actorShape Id="63871609-62ab-4e80-8bd4-c4c87029fb4a" absoluteBounds="1.5, 3.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="a14f2137-c5b3-48d7-98de-8a3e1900f6ed" LastKnownName="National Weather Service Officer" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="baabfeb5-c65f-4a95-894f-b84ceab2470f" absoluteBounds="3.875, 1.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="12a1a2dc-8eaa-4792-95e3-e2b73117d74a" LastKnownName="Set location" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 3.19642857142857); (4.08826882781834 : 1.70480798012976)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="2fb5011a-b6f8-44b0-b87e-aa36cf7af01d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="63871609-62ab-4e80-8bd4-c4c87029fb4a" />
+        <useCaseShapeMoniker Id="baabfeb5-c65f-4a95-894f-b84ceab2470f" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="a636d1fe-675d-4543-88b3-ca3d305dfab1" absoluteBounds="3.875, 2.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b97959ca-95a6-4c48-9d0f-066dae943148" LastKnownName="Check flood level" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 3.29166666666667); (3.95897485283108 : 2.63867504905631)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b21a94dd-f449-4f9a-9720-d71cf03c602b" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="63871609-62ab-4e80-8bd4-c4c87029fb4a" />
+        <useCaseShapeMoniker Id="a636d1fe-675d-4543-88b3-ca3d305dfab1" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="c493ed07-5d21-4746-b7ad-ca0bae10b66f" absoluteBounds="3.875, 3.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b4809113-d029-4329-8f83-cd9a7cba7669" LastKnownName="Predict flood zones" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 3.38690476190476); (3.87725226370302 : 3.476297726843)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b7f6d92d-aae9-4fed-a0bf-37a88830544d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="63871609-62ab-4e80-8bd4-c4c87029fb4a" />
+        <useCaseShapeMoniker Id="c493ed07-5d21-4746-b7ad-ca0bae10b66f" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="f0a4bc5c-32f1-4ac8-8582-902a29ef2755" absoluteBounds="4, 4.25, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="cb880bb9-3e53-4d49-a445-0740cfe444d6" LastKnownName="Update on critical flood prone area" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 3.48863636363636); (4.07240108422299 : 4.430636856465)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="533a9f01-0edc-4d95-b3dc-c2945be84dd1" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="63871609-62ab-4e80-8bd4-c4c87029fb4a" />
+        <useCaseShapeMoniker Id="f0a4bc5c-32f1-4ac8-8582-902a29ef2755" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="007b6332-8c2d-47a7-92dd-19a752cf00ba" absoluteBounds="4, 5.375, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="829896df-b7a5-456f-b681-93fec4bf2868" LastKnownName="Issues emergency alerts" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 3.59090909090909); (4.17215667227688 : 5.46686258060276)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b71f9962-f6bf-4cc0-aa62-1cc45fc34af9" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="63871609-62ab-4e80-8bd4-c4c87029fb4a" />
+        <useCaseShapeMoniker Id="007b6332-8c2d-47a7-92dd-19a752cf00ba" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="2db0603a-482a-484d-b5a3-c51e153c2e8a" absoluteBounds="7.25, 1.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a24e4ede-b63f-4c46-86ce-a04b647f8190" LastKnownName="Current location" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.84387438036185 : 1.5868285889559); (7.28112561963815 : 2.0381714110441)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="67ffcd8d-73df-4e52-8660-59dfe76e9764" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="baabfeb5-c65f-4a95-894f-b84ceab2470f" />
+        <useCaseShapeMoniker Id="2db0603a-482a-484d-b5a3-c51e153c2e8a" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="446e7c9a-6267-407b-9b12-3326298e30aa" absoluteBounds="7, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4248fa35-d3f1-4908-b741-7ef4f5ae987e" LastKnownName="Search location" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.85121207359966 : 1.42380606822405); (7.02378792640034 : 1.07619393177595)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="a76f1c93-7e39-42d5-ae5c-7f04fc216a1e" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="baabfeb5-c65f-4a95-894f-b84ceab2470f" />
+        <useCaseShapeMoniker Id="446e7c9a-6267-407b-9b12-3326298e30aa" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
