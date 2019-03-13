@@ -1,0 +1,12 @@
+C:\Users\chand\source\repos\BusinessLayer\BL\bin\Debug\LibBL.dll
+C:\Users\chand\source\repos\BusinessLayer\BL\bin\Debug\LibBL.pdb
+C:\Users\chand\source\repos\BusinessLayer\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\chand\source\repos\BusinessLayer\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\chand\source\repos\BusinessLayer\BL\obj\Debug\LibBL.dll
+C:\Users\chand\source\repos\BusinessLayer\BL\obj\Debug\LibBL.pdb
+C:\Users\chand\Source\Repos\BI\BusinessLayer\BL\bin\Debug\LibBL.dll
+C:\Users\chand\Source\Repos\BI\BusinessLayer\BL\bin\Debug\LibBL.pdb
+C:\Users\chand\Source\Repos\BI\BusinessLayer\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\chand\Source\Repos\BI\BusinessLayer\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\chand\Source\Repos\BI\BusinessLayer\BL\obj\Debug\LibBL.dll
+C:\Users\chand\Source\Repos\BI\BusinessLayer\BL\obj\Debug\LibBL.pdb

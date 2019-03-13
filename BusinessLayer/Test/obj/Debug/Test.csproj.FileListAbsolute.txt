@@ -1,0 +1,13 @@
+C:\Users\chand\source\repos\BusinessLayer\Test\bin\Debug\Test.exe.config
+C:\Users\chand\source\repos\BusinessLayer\Test\bin\Debug\Test.exe
+C:\Users\chand\source\repos\BusinessLayer\Test\bin\Debug\Test.pdb
+C:\Users\chand\source\repos\BusinessLayer\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\chand\source\repos\BusinessLayer\Test\obj\Debug\Test.exe
+C:\Users\chand\source\repos\BusinessLayer\Test\obj\Debug\Test.pdb
+C:\Users\chand\Source\Repos\BI\BusinessLayer\Test\bin\Debug\Test.exe.config
+C:\Users\chand\Source\Repos\BI\BusinessLayer\Test\bin\Debug\Test.exe
+C:\Users\chand\Source\Repos\BI\BusinessLayer\Test\bin\Debug\Test.pdb
+C:\Users\chand\Source\Repos\BI\BusinessLayer\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\chand\Source\Repos\BI\BusinessLayer\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\chand\Source\Repos\BI\BusinessLayer\Test\obj\Debug\Test.exe
+C:\Users\chand\Source\Repos\BI\BusinessLayer\Test\obj\Debug\Test.pdb
