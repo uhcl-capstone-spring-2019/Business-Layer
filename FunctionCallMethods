@@ -1,0 +1,51 @@
+//** Business Logic internal function calls **//
+
+
+1.	//** Open the Project **//
+ 
+ // Start or open the project//
+ 
+Call for UI to BL to open the project
+OpenProject()
+{
+// Opens the project
+}
+
+2. // ** Select Location **//
+
+// select the  current location
+       Call to BL to get location GetUserLocation( )
+{
+//calculates the user location
+GetUserLocation(string location, float latitude, float longitude)
+}
+Call to DAL GetUserLocation( )
+{
+//get the location from DB using DAL
+//DAL return the location address, latitude and longitude
+
+3.	
+//User provide destination
+Call to BL from UL
+FindLocationFRomDestination(StringName)
+{
+// call to DB with current location and string Name
+
+GetInitialLocationandDestinationFromInput(String userinput, currentLocation)
+DB return to BL
+}
+
+4.	// Select Building Type
+
+Call to BL from UI
+GetBuildingType( )
+{
+// get the building type from DB and respond to UI
+// returns building model, height and width
+}
+
+5. //** Delete Project **//
+
+6. //** Update Data or project **//
+
+7. //** Save the project **//
