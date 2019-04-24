@@ -1,0 +1,767 @@
+Task Analysis Specifications
+0.0	AR Flood Simulator
+
+1.     What is the goal of this task? 
+The goal of this task is to find the flood simulation in different areas to not build in flood prone areas using HoloLens.
+ 
+2.     What sub-tasks define this task? 
+The sub-tasks that define this task are
+●      1.0 Initialize.
+●      2.0 Location.
+●      3.0 Model.
+●      4.0 Project.
+●      5.0 Exit.
+ 
+3.     Is this task a subunit of a larger task?  
+No
+ 
+4.     What non-interface functions does this task require?  
+None
+ 
+5.     What kinds of inputs or actions does this task require from the user? 
+To perform this task, the user should know the usage of HoloLens.
+ 
+6.     What kinds of outputs/results are expected by performing this task? 
+Users can be able to know which the safe place is to build models.
+ 
+7.     What automatic actions does this task expect from the system? *
+None
+ 
+8.     What special characteristics of this task should we record?
+To check whether it have internet connection or not?
+ 
+9.     In this subtree, is there a task that must come before this one? 
+No
+ 
+10.  In this subtree, is there a task for which this one is required to be immediately preceding?  Is there any specific sequence in which the tasks must be performed
+Yes, the first task user must do wear the HoloLens.
+ 
+11.  Which, if any, primary classes/entities are involved in this subtask?
+Database.
+ 
+
+12.  How can this task fail (or end in non-completion)?
+This task may fail if user was not connected to a proper Wi-Fi network.
+                        
+13.  How frequently is this task performed?
+Whenever the user wants to build a model.
+ 
+14.  How open is this task, especially in terms of its sequence or inputs?
+This task is open every time when the user wears a HoloLens.
+ 
+15.  What if any are the specific usability expectations (e.g. ease of use) for this task and how do we anticipate determining if we have satisfied the user expectations? 
+Ease of use.
+
+Name: Initialize                                                                                   Number: 1.0
+
+1.     What is the goal of this task?
+The goal of this task is to initialize the database such that the user can perform operations on the HoloLens.
+ 
+2.     What sub-tasks define this task?  
+The sub-tasks that define this task are
+* Load Database
+* Check Cookie
+ 
+3.     Is this task a subtask of a larger task?
+Yes, this is a subunit of AR Flood Simulator.
+ 
+4.     What non-user interface functions does this task require?
+Retrieving values
+ 
+5.     What kinds of inputs or actions does this task require from the user?
+The user should use the HoloLens for finding the flood simulation.
+ 
+6.     What kinds of outputs or results occur by virtue of performing this task? 
+By performing this task, the user can access data from AR Flood Simulator using the HoloLens
+ 
+7.     What automatic actions does this task expect from the system?
+System should allow saving the data and retrieve data from database.
+ 
+8.     What special characteristics of this task should we record?
+None
+ 
+
+
+9.     Is there a subtask which must come immediately before?
+No
+
+10.  In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+No
+ 
+11.  Which if any primary entities (things) are involved in this subtask?
+Cookies, Database
+
+12.  How can this task fail?
+This task can fail if the authentication of database is not proper.
+
+13.  How frequently is this task performed?
+Whenever the user plans to use HoloLens
+ 
+14.  How open is this task, especially in terms of its sequence or inputs?
+This task is open for the first time when the HoloLens is setup.
+
+15. What if any are the specific usability expectations (e.g. ease of use) for this task and how do we anticipate determining if we have satisfied the user expectations?                                                      
+None
+
+Name: Load Database                                                                        Number: 1.1
+
+1. What is the goal of this task?      
+The goal of this task is to load the database to save the data when the users perform some operations using HoloLens.
+
+2. What sub-tasks define this task?
+None
+
+3. Is this task a subunit of a larger task?
+Yes, this task is a subunit of Initialize.
+
+4. What non-interface functions does this task require?
+None
+
+5. What kinds of inputs or actions does this task require from the user?
+The user should start the HoloLens.
+
+6. What kinds of outputs/results are expected by performing this task?
+User can view the location for flood simulation.
+7. What automatic actions does this task expect from the system?
+Initialize
+
+8. What special characteristics of this task should we record?
+None
+
+9. In this subtree, is there a task that must come before this one?
+No
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+No
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+Cookie, Database.
+
+12. How can this task fail?
+This task can fail in many situations such as if the internet connection is not available, if the application is not integrated, if the database fails to load.
+
+13. How frequently is this task performed?
+This task is performed whenever the user plans to use the HoloLens.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+This task is open at the beginning when the user awakes HoloLens and fails to perform if the database is not available.
+
+15. What if any are the specific usability expectations (e.g. ease of use) for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+
+Name: Check Cookie                                                                          Number: 1.2
+
+1. What is the goal of this task?
+The goal of this task is to check for the cookie in the windows application.
+
+2. What sub-tasks define this task?
+None
+
+3. Is this task a subunit of a larger task?
+Yes, this task is a subunit of a larger task Initialize.
+
+4. What non-interface functions does this task require?
+None
+
+5. What kinds of inputs or actions does this task require from the user?
+The user should be able to connect to the Wi-Fi using HoloLens.
+
+6. What kinds of outputs/results are expected by performing this task?
+Get the data from the cookie.
+
+7. What automatic actions does this task expect from the system?
+None
+
+8. What special characteristics of this task should we record?
+None
+
+9. In this subtree, is there a task that must come before this one?
+Yes, Load Database should come before this task.
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+Yes, this task should be performed before create cookie.
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+Cookie, Database.
+
+12. How can this task fail?
+This task can fail if the cookies are not enabled.
+
+13. How frequently is this task performed?
+This task is performed whenever the user plans to visit the website.
+Name: Location                                                                                   Number: 2.0
+
+14. How open is this task, especially in terms of its sequence or inputs?
+This task is open when the user data is stored in the cookie.
+
+15. What if any are the specific usability expectations for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+
+1. What is the goal of this task?
+The goal of this task is to know about location which is suitable for building houses.
+
+2. What sub-tasks define this task?
+None
+
+
+3. Is this task a subunit of a larger task?
+No
+
+4. What non-interface functions does this task require?
+None
+
+5. What kinds of inputs or actions does this task require from the user?
+The user should be able to connect to the Wi-Fi using hollow-lens.
+
+6. What kinds of outputs/results are expected by performing this task?
+The locations latitude, longitude will be known to the user
+
+7. What automatic actions does this task expect from the system?
+None
+
+8. What special characteristics of this task should we record?
+Latitude, Longitude, Address
+
+9. In this subtree, is there a task that must come before this one?
+No
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+Yes, this task starts after the initialization of database.
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+Set Location
+Get Location
+
+12. How can this task fail?
+This task can fail if the map box is loaded using wi-fi properly.
+
+13. How frequently is this task performed?
+This task is performed whenever the user plans to visit the any location for building models or houses.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+This task is open when the location user data is stored in the database.
+
+15. What if any are the specific usability expectations for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+
+
+Name: Set Location                                                                             Number: 2.1
+
+1. What is the goal of this task?
+The goal of this task is to know about how to set location.
+
+2. What sub-tasks define this task?
+None
+
+3. Is this task a subunit of a larger task?
+Yes
+
+4. What non-interface functions does this task require?
+None
+
+5. What kinds of inputs or actions does this task require from the user?
+The user should be able to set location.
+
+6. What kinds of outputs/results are expected by performing this task?
+The locations latitude, longitude will be known to the user
+
+7. What automatic actions does this task expect from the system?
+None
+
+8. What special characteristics of this task should we record?
+Address
+
+9. In this subtree, is there a task that must come before this one?
+No
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+Yes, this task starts after the initialization of database.
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+No
+
+12. How can this task fail?
+This task can fail if the user doesn’t know exact location.
+
+13. How frequently is this task performed?
+This task is performed whenever the user knows the exact location.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+This task is open when the location is known to the user.
+15. What if any are the specific usability expectations for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+
+Name: Get Location                                                                            Number: 2.2
+
+1. What is the goal of this task?
+The goal of this task is to know about how to get location.
+
+2. What sub-tasks define this task?
+None
+
+3. Is this task a subunit of a larger task?
+Yes
+
+4. What non-interface functions does this task require?
+None
+
+5. What kinds of inputs or actions does this task require from the user?
+The user should be able to connect to the wi-fi using hollow-lens to get the location from the database.
+
+6. What kinds of outputs/results are expected by performing this task?
+The locations latitude, longitude will be known to the user
+
+7. What automatic actions does this task expect from the system?
+None
+
+8. What special characteristics of this task should we record?
+Latitude, Longitude, Address
+
+9. In this subtree, is there a task that must come before this one?
+No
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+Yes, this task starts after the initialization of database.
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+No
+
+12. How can this task fail?
+This task can fail if the location from the database is not authenticated properly.
+
+13. How frequently is this task performed?
+This task is performed whenever the user plans to know about the location where the user is present.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+This task is open when the location what user wants from database.
+
+15. What if any are the specific usability expectations for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+ 
+ 
+Name: Model                                                                                       Number: 3.0
+ 
+1.      What is the goal of this task? 
+The goal of this task is to select the Model.
+ 
+2.     What sub-tasks define this task?  
+The sub-tasks that define this task are
+* Select Model type
+ 
+3.     Is this task a subtask of a larger task?  
+Yes, this is a subunit of AR Flood Simulator.
+ 
+4.     What non-user interface functions does this task require?
+None
+ 
+5.     What kinds of inputs or actions does this task require from the user?
+The user should use the hollow-lens for selecting Model.
+ 
+6.     What kinds of outputs or results occur by virtue of performing this task? 
+By performing this task, the user must be able to select the Model.
+ 
+7.     What automatic actions does this task expect from the system?
+System should allow saving the house model.
+ 
+8.     What special characteristics of this task should we record?
+None
+ 
+9.     Is there a subtask which must come immediately before?
+No
+ 
+10.  In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+No
+ 
+11.  Which if any primary entities (things) are involved in this subtask?
+Cookies, Database
+ 
+12.  How can this task fail?
+This task can fail if the authentication of database is not proper.
+ 
+13.  How frequently is this task performed?
+Whenever the user plans to plans to select the Model.
+ 
+14.  How open is this task, especially in terms of its sequence or inputs?
+This task is sequence after the user selects the location.
+ 
+15.  What if any are the specific usability expectations (e.g. ease of use) for this task and how do we anticipate determining if we have satisfied the user expectations?
+ None
+
+Name: Select Model Type                                                                  Number: 3.1
+
+1.      What is the goal of this task?
+The goal of this task is to select the Model type.
+ 
+2.     What sub-tasks define this task?   
+None
+ 
+3.     Is this task a subtask of a larger task?  
+Yes, this is a subunit of AR Flood Simulator.
+ 
+4.     What non-user interface functions does this task require?
+None
+ 
+5.     What kinds of inputs or actions does this task require from the user?
+The user should use the hollow-lens for selecting Model type.
+ 
+6.     What kinds of outputs or results occur by virtue of performing this task?  
+By performing this task, the user must be able to select the Model type.
+ 
+7.     What automatic actions does this task expect from the system?
+System should allow saving the house model type.
+ 
+8.     What special characteristics of this task should we record? 
+None
+ 
+9.     Is there a subtask which must come immediately before?
+No
+ 
+10.  In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+No
+
+11.     Which if any primary entities (things) are involved in this subtask? 
+Cookies, Database
+ 
+12.     How can this task fail?
+This task can fail if the authentication of database is not proper.
+
+13.     How frequently is this task performed? 
+Whenever the user plans to plans to select the Model type.
+
+14.     How open is this task, especially in terms of its sequence or inputs? 
+This task is sequence after the user selects the location.
+ 
+15.     What if any are the specific usability expectations (e.g. ease of use) for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+
+Name:Project                                                                                      Number:4.0                                                                     
+ 
+1.     What is the goal of this task? 
+The goal of this task is to make all the models into projects to view whenever necessary by the builder.
+ 
+2.     What sub-tasks define this task?  
+None
+ 
+3.     Is this task a subtask of a larger task?  
+Yes, this is a subunit of AR Flood Simulator.
+ 
+4.     What non-user interface functions does this task require? 
+Creating project using the location and model type.
+ 
+5.     What kinds of inputs or actions does this task require from the user? 
+None.
+
+ 
+6.     What kinds of outputs or results occur by virtue of performing this task?  
+By performing this task, the user can be able to use the previous projects for reference to build or not in a flood prone area.
+ 
+7.     What automatic actions does this task expect from the system?
+System should allow creating, saving and deleting the project.
+ 
+8.     What special characteristics of this task should we record?
+Location and model type.
+ 
+9.     Is there a subtask which must come immediately before?
+No
+ 
+10.  In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+Yes, location and model type
+ 
+11.  Which if any primary entities (things) are involved in this subtask?
+Open project
+Save project
+Delete project
+ 
+12.  How can this task fail?
+This task can fail if the authentication of database is not proper.
+ 
+13.  How frequently is this task performed?
+Whenever the user plans to open the project.
+ 
+14.  How open is this task, especially in terms of its sequence or inputs?
+This task is sequence after the user selects the project to open.
+ 
+15.  What if any are the specific usability expectations (e.g. ease of use) for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+
+Name: Open Project                                                                           Number: 4.1
+
+1. What is the goal of this task?
+The goal of this task is to know about how to open a project.
+
+2. What sub-tasks define this task?
+None
+
+3. Is this task a subunit of a larger task?
+Yes
+
+4. What non-interface functions does this task require?
+None
+
+5. What kinds of inputs or actions does this task require from the user?
+The user should be able to open the project.
+
+6. What kinds of outputs/results are expected by performing this task?
+To open the project file
+
+7. What automatic actions does this task expect from the system?
+None
+
+8. What special characteristics of this task should we record?
+Project attributes
+
+9. In this subtree, is there a task that must come before this one?
+No
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+Yes, this task starts after the project is selected to open.
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+No
+
+12. How can this task fail?
+This task can fail if the user is unable to open the project file.
+
+13. How frequently is this task performed?
+This task is performed whenever the user wants to get previous references from the projects saved.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+This task is open when the project is created.
+
+15. What if any are the specific usability expectations for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+
+Name: Delete Project                                                                          Number: 4.2
+
+1. What is the goal of this task?
+The goal of this task is to know about how to delete the project.
+
+2. What sub-tasks define this task?
+None
+3. Is this task a subunit of a larger task?
+Yes
+
+4. What non-interface functions does this task require?
+None
+
+5. What kinds of inputs or actions does this task require from the user?
+The user should be able to delete the project file.
+
+6. What kinds of outputs/results are expected by performing this task?
+The project must be deleted which cannot be viewed.
+
+7. What automatic actions does this task expect from the system?
+None.	
+
+8. What special characteristics of this task should we record?
+None.
+
+9. In this subtree, is there a task that must come before this one?
+No
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+Yes, this task starts after the project is created.
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+No
+
+12. How can this task fail?
+This task can fail if the user is unable to delete the project and if deleted it is able to be viewed.
+
+13. How frequently is this task performed?
+This task is performed whenever the user doesn’t want a project file.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+This task is open when the user wants to delete the project.
+
+15. What if any are the specific usability expectations for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+
+Name: Save Project                                                                             Number: 4.3
+
+1. What is the goal of this task?
+The goal of this task is to know about how to save the project for future references.
+
+2. What sub-tasks define this task?
+None
+
+3. Is this task a subunit of a larger task?
+Yes
+
+4. What non-interface functions does this task require?
+None
+
+5. What kinds of inputs or actions does this task require from the user?
+The user should be able to save the project file.
+
+6. What kinds of outputs/results are expected by performing this task?
+None.
+
+7. What automatic actions does this task expect from the system?
+None.
+
+8. What special characteristics of this task should we record?
+None.
+
+9. In this subtree, is there a task that must come before this one?
+No
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+Yes, this task starts after the project is created if the user wants to save the project for future references.
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+No
+
+12. How can this task fail?
+This task can fail if the user doesn’t know how to save the project.
+
+13. How frequently is this task performed?
+This task is performed whenever the user wants to save a particular project.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+This task is open when the user wants to save the file of the created project.
+
+15. What if any are the specific usability expectations for this task and how do we anticipate determining if we have satisfied the user expectations?
+None
+
+Name: Exit                                                                                           Number: 5.0
+1. What is the goal of this task?
+The goal of this task is to save and close the database properly.
+
+2. What sub-tasks define this task?
+ Save the Database
+ Close the Database
+
+3. Is this task a subunit of a larger task?
+Yes, AR Flood Simulator.
+
+4. What non-interface functions does this task require?
+The non-interface functions like saving the database and closing the database are required for this task.
+
+5. What kinds of inputs or actions does this task require from the user?
+The input required for this task is the user should close the AR Flood Simulator.
+
+6. What kinds of outputs/results are expected by performing this task?
+The database should be saved and closed.
+
+7. What automatic actions does this task expect from the system?
+The task performs two automatic actions like saving the database and closing the database.
+
+8. What special characteristics of this task should we record?
+Database
+
+9. In this subtree, is there a task that must come before this one?
+None
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+None
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+Database
+
+12. How can this task fail?
+The task can fail if the database doesn’t save properly.
+
+13. How frequently is this task performed?
+The task is performed whenever the website is closed.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+The task is open only when the user closes the website.
+
+15. What if any are the specific usability for this task and how do we anticipate determining if we have satisfied the user expectations
+Ease of Use
+
+Name: Save database                                                                          Number: 5.1
+
+1. What is the goal of this task?
+The goal of this task is to save the database.
+
+2. What sub-tasks define this task?
+None.
+
+3. Is this task a subunit of a larger task?
+Yes, 5.0 Exit
+
+4. What non-interface functions does this task require?
+Save the Database
+
+5. What kinds of inputs or actions does this task require from the user?
+The input action required for this task is the user should close the AR Flood Simulator.
+
+6. What kinds of outputs/results are expected by performing this task?
+The database should be saved and closed.
+
+7. What automatic actions does this task expect from the system?
+The task performs two automatic actions like saving the database and closing the database.
+
+8. What special characteristics of this task should we record?
+Database
+
+9. In this subtree, is there a task that must come before this one?
+None
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+Yes, 5.2 Close the Database
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+Database
+
+12. How can this task fail?
+This task can fail if the database is not saved properly.
+
+13. How frequently is this task performed?
+The task is performed whenever the website is closed.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+The task is open only when the user closes the website.
+
+15. What if any are the specific usability expectations for this task and how do we   anticipate determining if we have satisfied the user expectations
+Ease of Use
+
+Name: Close database                                                                         Number: 5.2
+
+1. What is the goal of this task?
+The goal of this task is to close the Database.
+
+2. What sub-tasks define this task?
+None
+
+3. Is this task a subunit of a larger task?
+Yes, 5.0 Exit
+
+4. What non-interface functions does this task require?
+Closing the Database
+
+5. What kinds of inputs or actions does this task require from the user?
+The input action required for this task is the user should use hollow-lens
+
+6. What kinds of outputs/results are expected by performing this task?
+Closing the Database
+
+7. What automatic actions does this task expect from the system?
+Closing the Database
+
+8. What special characteristics of this task should we record?
+None
+
+9. In this subtree, is there a task that must come before this one?
+Yes, 5.1 Save Database
+
+10. In this subtree, is there a task for which this one is required to be immediately preceding? Is there any specific sequence in which the tasks must be performed?
+None
+
+11. Which, if any, primary classes/entities are involved in this subtask?
+Database
+
+12. How can this task fail?
+This task can fail if the database is not closed properly.
+
+13. How frequently is this task performed?
+The task is performed whenever the website is closed.
+
+14. How open is this task, especially in terms of its sequence or inputs?
+The task is open only when the user closes the website.
+
+15. What if any are the specific usability expectations for this task and how do we anticipate determining if we have satisfied the user expectations?
+Ease of use
+
